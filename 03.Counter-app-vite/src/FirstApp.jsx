@@ -11,11 +11,11 @@ const getGreeting = (username) => {
 export const FirstApp = ( { title, total } ) => {
 
   return (
-    <>
+    <div>
         <code>{ getGreeting('MacinDev') }</code>
-        <h2>{ title }</h2>
+        <h1 data-testid="test-title"> { title } </h1>
         <div>{ Math.pow( total, 2 ) }</div>
-    </>
+    </div>
   )
 }
 
