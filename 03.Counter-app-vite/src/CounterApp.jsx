@@ -28,6 +28,7 @@ export const CounterApp = ({ value }) => {
         
         <button
             onClick={ handleReset }
+            aria-label='btn-reset'
         >
             Reset
         </button>

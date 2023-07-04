@@ -13,7 +13,8 @@ export const FirstApp = ( { title, total } ) => {
   return (
     <div>
         <code>{ getGreeting('MacinDev') }</code>
-        <h1 data-testid="test-title"> { title } </h1>
+        <h2 data-testid="test-title"> { title } </h2>
+        <div>{ Math.pow( total, 2 ) }</div>
         <div>{ Math.pow( total, 2 ) }</div>
     </div>
   )

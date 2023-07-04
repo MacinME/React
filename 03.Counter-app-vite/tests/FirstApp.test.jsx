@@ -15,14 +15,14 @@ describe('Test on <FirstApp />', () => {
     test('Must return the title within tag h1', () => {
         const title = 'Hi, I am goku';
         const total = 23;
-        const { getByText, getByTestId } = render( 
+        const { getByText, getByTestId, getAllByText} = render( 
             <FirstApp 
                 title={ title } 
                 total={ total }  
             />
         );
 
-        expect( getByText( 529 ) ).toBeTruthy();
+        expect( getAllByText( 529 ).length ).toBe(2);
 
         expect( getByTestId('test-title').innerHTML ).toContain(title);
 
