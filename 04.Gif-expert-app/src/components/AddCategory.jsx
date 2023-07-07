@@ -12,13 +12,14 @@ export const AddCategory = ({ onNewCategory }) => {
     const onSubmit = (evt) => {
         evt.preventDefault();
         if(inputValue.trim().length <= 1 ) return;
+
         onNewCategory( inputValue );
         // setCategories((values) => [...values, inputValue]);
         setInputValue('')
     }
 
   return (
-    <form onSubmit={ onSubmit }>
+    <form onSubmit={ onSubmit } aria-label='form'>
         <input 
             type="text" 
             placeholder="Search Gifs"    
