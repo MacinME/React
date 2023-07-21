@@ -5,11 +5,11 @@ export const useCounter = ( initialValue = 10) => {
     const [counter, setCounter] = useState( initialValue );
 
     const onIncrease = (value = 1) => {
-        setCounter( counter + value);
+        setCounter( (cValue) => cValue + value);
     }
 
     const onDecrease = (value = 1) => {
-        setCounter( counter - value);
+        setCounter( (cValue) => cValue - value);
     }
 
     const onReset = () => {

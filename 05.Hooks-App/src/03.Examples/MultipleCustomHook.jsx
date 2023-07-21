@@ -9,7 +9,7 @@ export const MultipleCustomHook = () => {
 
   return (
     <>
-        <h1>Custom Hook with Fetch API</h1>
+        <h1>Breaking Quotes</h1>
         <hr />
 
         {
