@@ -10,7 +10,7 @@ export const AboutPage = () => {
         <h1>About Page</h1>
         <hr />
 
-        <pre>
+        <pre aria-label="pre">
           {  JSON.stringify( user, null, 5 ) }
         </pre>
     </>
