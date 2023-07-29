@@ -34,7 +34,7 @@ export const SearchPage = () => {
           <div className="col-5">
             <h4>Search Hero</h4>
             <hr />
-            <form onSubmit={ onSubmit }>
+            <form aria-label="form" onSubmit={ onSubmit }>
               <input 
                 type="text" 
                 name="searchHero" 
@@ -63,6 +63,7 @@ export const SearchPage = () => {
               search a hero
             </div>
             <div 
+              aria-label="alert"
               className="alert alert-danger"
               style={{ display: `${ showError ? '' : 'none' }` }}
             >
